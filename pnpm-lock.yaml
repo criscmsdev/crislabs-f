@@ -40,6 +40,7 @@ specifiers:
   sweetalert2: 11.6.15
   tailwindcss: ^3.1.6
   typescript: 4.7.4
+  use-count-up: 3.0.1
 
 dependencies:
   '@headlessui/react': 1.7.5_biqbaboplfbrettd7655fr4n2y
@@ -66,6 +67,7 @@ dependencies:
   styled-components: 6.0.0-beta.2_biqbaboplfbrettd7655fr4n2y
   styled-jsx: 5.1.0_react@18.2.0
   sweetalert2: 11.6.15
+  use-count-up: 3.0.1_react@18.2.0
 
 devDependencies:
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
@@ -4870,6 +4872,23 @@ packages:
     dependencies:
       punycode: 2.1.1
     dev: true
+
+  /use-count-up/3.0.1_react@18.2.0:
+    resolution: {integrity: sha512-jlVsXJYje6jh+xwQaCEYrwHoB+nRyillNEmr21bhe9kw7tpRzyrSq9jQs9UOlo+8hCFkuOmjUihL3IjEK/piVg==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      use-elapsed-time: 3.0.2_react@18.2.0
+    dev: false
+
+  /use-elapsed-time/3.0.2_react@18.2.0:
+    resolution: {integrity: sha512-2EY9lJ5DWbAvT8wWiEp6Ztnl46DjXz2j78uhWbXaz/bg3OfpbgVucCAlcN8Bih6hTJfFTdVYX9L6ySMn5py/wQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /use-sync-external-store/1.2.0_react@18.2.0:
     resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
