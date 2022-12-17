@@ -1,3 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  mark {
+    @apply bg-gray-200 px-1 py-0.5 rounded-md shadow-md;
+  }
+  
+  /* ... */
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-500;
+  }
+  .btn-edit {
+    @apply inline-flex items-center space-x-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2
+  }
+  .btn-default {
+    @apply inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-500 space-x-2;
+  }
+  .label-form {
+    @apply block text-sm font-medium text-gray-700;
+  }
+  .input-form {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-sm;
+  }
+  .group-button-form {
+    @apply bg-gray-100 flex flex-row-reverse p-4 gap-3 items-end;
+  }
+  .swiper {
+    @apply w-full h-[24rem] sm:h-[44rem] lg:h-[54rem] ;
+  }
+  .grid-sites {
+    @apply grid grid-cols-2 gap-3 sm:gap-6  sm:grid-cols-4  lg:grid-cols-5 xl:grid-cols-6 py-6 sm:pt-10;
+  }
+  .card-dashboard {
+    @apply relative max-w-xs rounded-md shadow hover:shadow-2xl transition-all z-0  delay-150  bg-gray-100 text-gray-800;
+  }
+  .card-dashboard-input {
+    @apply h-5 w-5 rounded border-gray-400 text-indigo-600 focus:ring-indigo-500 absolute  top-2 left-2 z-10 opacity-0 group-hover:opacity-100 transition ease-in-out delay-150;
+  }
+
+  .ql-editor {
+    font-size: 30rem  !important ;
+}
+  .colored-toast.swal2-icon-success {
+    background-color: #a5dc86 !important ;
+  }
+
+  .colored-toast.swal2-icon-error {
+    background-color: #f27474 !important;
+  }
+  
+  .colored-toast.swal2-icon-warning {
+    background-color: #f8bb86 !important;
+  }
+  
+  .colored-toast.swal2-icon-info {
+    background-color: #3fc3ee !important;
+  }
+  
+  .colored-toast.swal2-icon-question {
+    background-color: #87adbd !important;
+  }
+  
+  .colored-toast .swal2-title {
+    color: white;
+  }
+  
+  .colored-toast .swal2-close {
+    color: white;
+  }
+  
+  .colored-toast .swal2-html-container {
+    color: white;
+  }
+  .my-validation-message::before {
+    display: none;
+  }
+  
+  .my-validation-message i {
+    margin: 0 .4em;
+    color: #f27474;
+    font-size: 1.4em;
+  }
+}

@@ -65,3 +65,12 @@ export async function fetchSubCategory(
   const category = await fetchCategoryBySlug(categorySlug);
   return findSubCategory(category, subCategorySlug);
 }
+
+export async function fetchTodos(){
+  const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data');
+  }
+  return res.json();
+}
